@@ -551,7 +551,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Auth\nVerification",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -565,7 +565,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Auth\nVerification"
             ],
             "id": "e2952fef-603b-42ce-8ab1-83f917644593",
             "source": {
@@ -597,6 +597,9 @@
               "height": 90
             },
             "attrs": {
+              "text": {
+                "text": "Authorization \nProvider"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -691,7 +694,7 @@
             "zIndex": 11,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Authorization \nProvider",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
