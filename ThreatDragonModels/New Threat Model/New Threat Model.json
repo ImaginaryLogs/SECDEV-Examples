@@ -1337,14 +1337,18 @@
             ],
             "id": "c27dde51-d89e-47dc-96ec-c1314e776bcf",
             "source": {
-              "x": 600,
-              "y": 70
+              "x": 680,
+              "y": 50
             },
             "target": {
-              "x": 800,
-              "y": 90
+              "x": 690,
+              "y": 50
             },
             "vertices": [
+              {
+                "x": 600,
+                "y": 110
+              },
               {
                 "x": 630,
                 "y": 290
@@ -1352,8 +1356,57 @@
               {
                 "x": 750,
                 "y": 290
+              },
+              {
+                "x": 800,
+                "y": 120
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "trust-boundary-curve",
