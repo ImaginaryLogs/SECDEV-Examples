@@ -39,8 +39,7 @@
               ],
               "containedElements": [
                 "25596f49-3555-439f-aa7a-9b17263c4151",
-                "d2b7b4bb-50f0-4e4c-b4ee-2860fd185353",
-                "ea44d5c0-4027-4d6f-a36a-2dedf6db1288"
+                "d2b7b4bb-50f0-4e4c-b4ee-2860fd185353"
               ]
             },
             "labels": [
@@ -1331,133 +1330,6 @@
             }
           },
           {
-            "position": {
-              "x": 183.25,
-              "y": 440
-            },
-            "size": {
-              "width": 60,
-              "height": 50
-            },
-            "attrs": {
-              "text": {
-                "text": "Spoofing"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 23,
-            "id": "119ec88a-0154-4d94-9ce4-e42880336e65",
-            "data": {
-              "type": "tm.Text",
-              "name": "Spoofing",
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 1015,
-              "y": 450
-            },
-            "size": {
-              "width": 60,
-              "height": 50
-            },
-            "attrs": {
-              "text": {
-                "text": "Spoofing"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 24,
-            "id": "ea44d5c0-4027-4d6f-a36a-2dedf6db1288",
-            "data": {
-              "type": "tm.Text",
-              "name": "Spoofing",
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 661,
-              "y": 600
-            },
-            "size": {
-              "width": 60,
-              "height": 50
-            },
-            "attrs": {
-              "text": {
-                "text": "Spoofing"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 25,
-            "id": "63b07150-3193-44bc-adb6-37e0a54c03fb",
-            "data": {
-              "type": "tm.Text",
-              "name": "Spoofing",
-              "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "position": {
-              "x": 661,
-              "y": 70
-            },
-            "size": {
-              "width": 60,
-              "height": 50
-            },
-            "attrs": {
-              "text": {
-                "text": "Elevation of \nPrivilege"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 26,
-            "id": "58960feb-783c-41b4-8e74-cd24eb692fb2",
-            "data": {
-              "type": "tm.Text",
-              "name": "Elevation of \nPrivilege",
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 1015,
-              "y": 55
-            },
-            "size": {
-              "width": 60,
-              "height": 50
-            },
-            "attrs": {
-              "text": {
-                "text": "Tampering With The Data \nUsing The SQL Injection Attack"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 27,
-            "id": "5e63447c-a493-4a60-9076-112dbc3e02f5",
-            "data": {
-              "type": "tm.Text",
-              "name": "Tampering With The Data \nUsing The SQL Injection Attack",
-              "hasOpenThreats": false
-            }
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1475,9 +1347,7 @@
               ],
               "containedElements": [
                 "80d55da5-2fee-4e38-ad65-328ee4c409ae",
-                "d2b7b4bb-50f0-4e4c-b4ee-2860fd185353",
-                "58960feb-783c-41b4-8e74-cd24eb692fb2",
-                "5e63447c-a493-4a60-9076-112dbc3e02f5"
+                "d2b7b4bb-50f0-4e4c-b4ee-2860fd185353"
               ]
             },
             "labels": [
