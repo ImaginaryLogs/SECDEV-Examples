@@ -31,29 +31,46 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "e074ffb0-0118-4a26-bfd7-d8ab030a5154",
+                "bc0e1cde-5124-483e-8e61-6c40dcb588f1",
+                "032eb720-13a1-489a-acba-b56537fa532d",
+                "eb77ffe1-8aca-4be6-a863-a5d3611c8311"
+              ],
+              "containedElements": [
+                "25596f49-3555-439f-aa7a-9b17263c4151",
+                "d2b7b4bb-50f0-4e4c-b4ee-2860fd185353",
+                "ea44d5c0-4027-4d6f-a36a-2dedf6db1288"
+              ]
             },
             "labels": [
               "Generic Trust\nBoundary"
             ],
             "id": "3d93ce92-005e-4a80-a736-d24ae66eb934",
             "source": {
-              "x": 960,
-              "y": 110
+              "x": 1220,
+              "y": 80
             },
             "target": {
-              "x": 962,
-              "y": 682
+              "x": 1090,
+              "y": 690
             },
             "vertices": [
               {
-                "x": 932,
-                "y": 250
+                "x": 1140,
+                "y": 120
               },
               {
-                "x": 932,
-                "y": 512
+                "x": 950,
+                "y": 150
+              },
+              {
+                "x": 920,
+                "y": 400
+              },
+              {
+                "x": 980,
+                "y": 620
               }
             ]
           },
@@ -335,7 +352,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Insert Query With Feedback Comments",
+              "name": "Insert Query With \nFeedback Comments",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -346,10 +363,12 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "3d93ce92-005e-4a80-a736-d24ae66eb934"
+              ]
             },
             "labels": [
-              "Insert Query With Feedback Comments"
+              "Insert Query With \nFeedback Comments"
             ],
             "id": "e074ffb0-0118-4a26-bfd7-d8ab030a5154",
             "source": {
@@ -398,7 +417,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "3d93ce92-005e-4a80-a736-d24ae66eb934"
+              ]
             },
             "labels": [
               "Success=1"
@@ -451,7 +472,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c27dde51-d89e-47dc-96ec-c1314e776bcf"
+                "3d93ce92-005e-4a80-a736-d24ae66eb934"
               ]
             },
             "labels": [
@@ -505,7 +526,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c27dde51-d89e-47dc-96ec-c1314e776bcf"
+                "3d93ce92-005e-4a80-a736-d24ae66eb934"
               ]
             },
             "labels": [
@@ -1310,44 +1331,6 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 22,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Generic Trust\nBoundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Generic Trust\nBoundary"
-            ],
-            "id": "51644f98-a7b6-4752-b362-453b6591cb23",
-            "source": {
-              "x": 370,
-              "y": 30
-            },
-            "target": {
-              "x": 660,
-              "y": 750
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 220
-              },
-              {
-                "x": 580,
-                "y": 610
-              }
-            ]
-          },
-          {
             "position": {
               "x": 183.25,
               "y": 440
@@ -1417,6 +1400,13 @@
               "type": "tm.Text",
               "name": "Spoofing",
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1481,13 +1471,13 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "33b62bea-40d0-41ff-8362-7459b9c9d277",
-                "e2952fef-603b-42ce-8ab1-83f917644593",
-                "032eb720-13a1-489a-acba-b56537fa532d",
-                "eb77ffe1-8aca-4be6-a863-a5d3611c8311"
+                "e2952fef-603b-42ce-8ab1-83f917644593"
               ],
               "containedElements": [
                 "80d55da5-2fee-4e38-ad65-328ee4c409ae",
-                "58960feb-783c-41b4-8e74-cd24eb692fb2"
+                "d2b7b4bb-50f0-4e4c-b4ee-2860fd185353",
+                "58960feb-783c-41b4-8e74-cd24eb692fb2",
+                "5e63447c-a493-4a60-9076-112dbc3e02f5"
               ]
             },
             "labels": [
@@ -1495,11 +1485,11 @@
             ],
             "id": "c27dde51-d89e-47dc-96ec-c1314e776bcf",
             "source": {
-              "x": 600,
-              "y": 60
+              "x": 560,
+              "y": 10
             },
             "target": {
-              "x": 800,
+              "x": 1380,
               "y": 40
             },
             "vertices": [
@@ -1508,16 +1498,54 @@
                 "y": 110
               },
               {
-                "x": 630,
-                "y": 290
+                "x": 620,
+                "y": 240
               },
               {
                 "x": 750,
-                "y": 290
+                "y": 240
               },
               {
-                "x": 780,
-                "y": 130
+                "x": 880,
+                "y": 60
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 29,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust\nBoundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Generic Trust\nBoundary"
+            ],
+            "id": "51644f98-a7b6-4752-b362-453b6591cb23",
+            "source": {
+              "x": 370,
+              "y": 30
+            },
+            "target": {
+              "x": 700,
+              "y": 810
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 220
+              },
+              {
+                "x": 590,
+                "y": 620
               }
             ]
           }
