@@ -1148,7 +1148,7 @@
               "threats": [
                 {
                   "id": "fb2b006d-4a65-4563-9f62-c18b98056850",
-                  "title": "Tampering With The Data Using THE SQL Injection Attack",
+                  "title": "Tampering With The Data Using The SQL Injection Attack",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
@@ -1162,8 +1162,15 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "repudiation": 1
+                "repudiation": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1320,7 +1327,8 @@
                 "eb77ffe1-8aca-4be6-a863-a5d3611c8311"
               ],
               "containedElements": [
-                "80d55da5-2fee-4e38-ad65-328ee4c409ae"
+                "80d55da5-2fee-4e38-ad65-328ee4c409ae",
+                "58960feb-783c-41b4-8e74-cd24eb692fb2"
               ]
             },
             "labels": [
@@ -1383,6 +1391,126 @@
                 "y": 610
               }
             ]
+          },
+          {
+            "position": {
+              "x": 97,
+              "y": 440
+            },
+            "size": {
+              "width": 60,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Spoofing"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "119ec88a-0154-4d94-9ce4-e42880336e65",
+            "zIndex": 23,
+            "data": {
+              "type": "tm.Text",
+              "name": "Spoofing",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1105,
+              "y": 440
+            },
+            "size": {
+              "width": 60,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Spoofing"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "ea44d5c0-4027-4d6f-a36a-2dedf6db1288",
+            "data": {
+              "type": "tm.Text",
+              "name": "Spoofing",
+              "hasOpenThreats": false
+            },
+            "zIndex": 24
+          },
+          {
+            "position": {
+              "x": 700,
+              "y": 600
+            },
+            "size": {
+              "width": 60,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Spoofing"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "63b07150-3193-44bc-adb6-37e0a54c03fb",
+            "data": {
+              "type": "tm.Text",
+              "name": "Spoofing",
+              "hasOpenThreats": false
+            },
+            "zIndex": 25
+          },
+          {
+            "position": {
+              "x": 620,
+              "y": 80
+            },
+            "size": {
+              "width": 60,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Spoofing"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "58960feb-783c-41b4-8e74-cd24eb692fb2",
+            "data": {
+              "type": "tm.Text",
+              "name": "Spoofing",
+              "hasOpenThreats": false
+            },
+            "zIndex": 26
+          },
+          {
+            "position": {
+              "x": 1122,
+              "y": 105
+            },
+            "size": {
+              "width": 60,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Tampering With The Data \nUsing The SQL Injection Attack"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "5e63447c-a493-4a60-9076-112dbc3e02f5",
+            "data": {
+              "type": "tm.Text",
+              "name": "Tampering With The Data \nUsing The SQL Injection Attack",
+              "hasOpenThreats": false
+            },
+            "zIndex": 27
           }
         ]
       }
