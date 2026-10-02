@@ -1012,7 +1012,7 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isALog": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": true,
@@ -1152,7 +1152,7 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
-              "providesAuthentication": false,
+              "providesAuthentication": true,
               "threats": [
                 {
                   "id": "fb2b006d-4a65-4563-9f62-c18b98056850",
@@ -1313,105 +1313,6 @@
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
-            "zIndex": 21,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Generic Trust\nBoundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "33b62bea-40d0-41ff-8362-7459b9c9d277",
-                "e2952fef-603b-42ce-8ab1-83f917644593",
-                "032eb720-13a1-489a-acba-b56537fa532d",
-                "eb77ffe1-8aca-4be6-a863-a5d3611c8311"
-              ],
-              "containedElements": [
-                "80d55da5-2fee-4e38-ad65-328ee4c409ae",
-                "58960feb-783c-41b4-8e74-cd24eb692fb2"
-              ]
-            },
-            "labels": [
-              "Generic Trust\nBoundary"
-            ],
-            "id": "c27dde51-d89e-47dc-96ec-c1314e776bcf",
-            "source": {
-              "x": 680,
-              "y": 50
-            },
-            "target": {
-              "x": 690,
-              "y": 50
-            },
-            "vertices": [
-              {
-                "x": 600,
-                "y": 110
-              },
-              {
-                "x": 630,
-                "y": 290
-              },
-              {
-                "x": 750,
-                "y": 290
-              },
-              {
-                "x": 800,
-                "y": 120
-              }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
             "zIndex": 22,
             "connector": "smooth",
             "data": {
@@ -1428,8 +1329,8 @@
             ],
             "id": "51644f98-a7b6-4752-b362-453b6591cb23",
             "source": {
-              "x": 600,
-              "y": 20
+              "x": 370,
+              "y": 30
             },
             "target": {
               "x": 660,
@@ -1565,6 +1466,60 @@
               "name": "Tampering With The Data \nUsing The SQL Injection Attack",
               "hasOpenThreats": false
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 28,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust\nBoundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "33b62bea-40d0-41ff-8362-7459b9c9d277",
+                "e2952fef-603b-42ce-8ab1-83f917644593",
+                "032eb720-13a1-489a-acba-b56537fa532d",
+                "eb77ffe1-8aca-4be6-a863-a5d3611c8311"
+              ],
+              "containedElements": [
+                "80d55da5-2fee-4e38-ad65-328ee4c409ae",
+                "58960feb-783c-41b4-8e74-cd24eb692fb2"
+              ]
+            },
+            "labels": [
+              "Generic Trust\nBoundary"
+            ],
+            "id": "c27dde51-d89e-47dc-96ec-c1314e776bcf",
+            "source": {
+              "x": 600,
+              "y": 60
+            },
+            "target": {
+              "x": 800,
+              "y": 40
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": 110
+              },
+              {
+                "x": 630,
+                "y": 290
+              },
+              {
+                "x": 750,
+                "y": 290
+              },
+              {
+                "x": 780,
+                "y": 130
+              }
+            ]
           }
         ]
       }
