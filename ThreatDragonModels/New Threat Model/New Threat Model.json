@@ -13,7 +13,7 @@
     "diagrams": [
       {
         "id": 1,
-        "title": "Class Activity 5 Diagram",
+        "title": "Class Activity 2 Diagram",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1413,7 +1413,7 @@
             }
           }
         ],
-        "description": "Diagram of the Class Activity"
+        "description": "Diagram of the given web system in the class activity"
       }
     ],
     "diagramTop": 4,
