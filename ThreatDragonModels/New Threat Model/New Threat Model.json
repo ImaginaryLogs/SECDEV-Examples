@@ -197,7 +197,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "The web application may be spoofed by an attacker, and this can lead to an attack on the browser client",
+                  "description": "The web application may be spoofed by an attacker and this may lead to unauthorized access to the browser client.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -210,8 +210,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
-                  "description": "The web application sent a notification that claims that it did not receive data from the web browser across the trust boundary.",
-                  "mitigation": "Have the web application log and audit to record the time, source, and important claims of the received data.\n",
+                  "description": "The web application claims that it did not receive data from a process on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
@@ -219,9 +219,9 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 5,
                 "tampering": 0,
-                "repudiation": 1,
+                "repudiation": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -374,8 +374,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "Feedback comments, and other relevant data, from the web browser may be intercepted and tampered by an attacker. Input data verification failure can lead to a lot of exploitable issues.",
-                  "mitigation": "Verify any incoming paths, and how they structure and formatted the data. The incoming data must be checked with an approved list of valid input data with server-side input validation, json/schema validation, and enconding to prevent cross-site scripting.",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
+                  "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
@@ -397,7 +397,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "informationDisclosure": 2,
                 "denialOfService": 0
               }
@@ -422,6 +422,10 @@
               {
                 "x": 510,
                 "y": 590
+              },
+              {
+                "x": 570,
+                "y": 570
               }
             ]
           },
@@ -943,11 +947,11 @@
               "threats": [
                 {
                   "id": "37088fe4-7f04-4ae5-9e71-4252d06b09d4",
-                  "title": "SQL Code Injection",
+                  "title": "Malicious SQL Code Injection",
                   "status": "Open",
                   "severity": "Low",
                   "type": "Tampering",
-                  "description": "An SQL injection attacks the database where SQL code is inserted into strings that the server parses and executes with the ill intent. This can jeopardize data integrity such as unwarranted creation, updating, and deletion of row(s) of data.",
+                  "description": "SQL injection is an attack in which malicious code is\ninserted into strings that are later passed to an instance of SQL Server for parsing and execution.",
                   "mitigation": "Use of Parameterized Queries / Prepared Statements - these restrict interactions to the database to a certain valid range of actions. ",
                   "modelType": "STRIDE",
                   "new": false,
@@ -956,12 +960,12 @@
                 },
                 {
                   "id": "060f21ce-151f-4869-8ca5-6aab12e50f89",
-                  "title": "Unverifiable SQL Database Data Writes",
+                  "title": "Unverified SQL Database Data Writes",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
-                  "description": "SQL Database claimed it did not write data received from another entity on the other side of the trust boundary.",
-                  "mitigation": "Use logging and auditing to record the time, source, and other claims of any received data from the SQL server.",
+                  "description": "The SQL Database claims that it did not write data received from an entity on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 14,
@@ -969,8 +973,8 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
-                "repudiation": 3,
+                "tampering": 4,
+                "repudiation": 5,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1466,7 +1470,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "LDAP Injection is a possibility as it could alter search filters.",
+                  "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
                   "mitigation": "Mitigate by parameterized LDAP queries to restrict to valid queries, and perform strict input encoding/sanitization.",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1492,8 +1496,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
-                  "description": "An attack can read information not intended for disclosure because of improper data protection set on the LDAP.",
-                  "mitigation": "Apply least-privilege read permissions.",
+                  "description": "LDAP claims that it did not write data received from an entity on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 17,
@@ -1501,9 +1505,9 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 3,
+                "tampering": 5,
                 "repudiation": 1,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
