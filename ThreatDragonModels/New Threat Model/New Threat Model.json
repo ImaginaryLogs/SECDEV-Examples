@@ -193,22 +193,35 @@
               "threats": [
                 {
                   "id": "cc197a0b-4c52-40e9-9893-de12c32544de",
-                  "title": "Spoofing",
+                  "title": "Web Application Spoofing",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "description": "The web application may be spoofed by an attacker, and this can lead to an attack on the browser client",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "5e0d6890-ca83-44a7-a1e2-b0b677ae4936",
+                  "title": "Missing Web Application Logging",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The web application sent a notification that claims that it did not receive data from the web browser across the trust boundary.",
+                  "mitigation": "Have the web application log and audit to record the time, source, and important claims of the received data.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -327,7 +340,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -348,13 +362,45 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "39a6f337-18a0-444a-8921-c852f5457b20",
+                  "title": "Feedback Data Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Feedback comments, and other relevant data, from the web browser may be intercepted and tampered by an attacker. Input data verification failure can lead to a lot of exploitable issues.",
+                  "mitigation": "Verify any incoming paths, and how they structure and formatted the data. The incoming data must be checked with an approved list of valid input data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "03e0882f-6350-4bdd-b11b-dd4670002967",
+                  "title": "Sensitive Feedback Data Disclosure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Any input data from the web browser may be sniffed by an attacker. It may be an open disclosure of information leading to privacy and compliance issues; moreover, that incoming can have data containing sensitive information that can be exploited to manipulate the system.",
+                  "mitigation": "Encrypt the incoming data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Insert Feedback Comments"
@@ -1298,6 +1344,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 30,
             "ports": {
               "groups": {
                 "top": {
@@ -1381,7 +1428,6 @@
               ]
             },
             "id": "396b5225-d0db-4829-b07f-e4a90087ff4f",
-            "zIndex": 30,
             "data": {
               "type": "tm.Actor",
               "name": "Authorization\nProvider",
@@ -1418,6 +1464,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 10
+    "threatTop": 13
   }
 }
