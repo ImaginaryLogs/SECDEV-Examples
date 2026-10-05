@@ -375,7 +375,7 @@
                   "severity": "TBD",
                   "type": "Tampering",
                   "description": "Feedback comments, and other relevant data, from the web browser may be intercepted and tampered by an attacker. Input data verification failure can lead to a lot of exploitable issues.",
-                  "mitigation": "Verify any incoming paths, and how they structure and formatted the data. The incoming data must be checked with an approved list of valid input data.",
+                  "mitigation": "Verify any incoming paths, and how they structure and formatted the data. The incoming data must be checked with an approved list of valid input data with server-side input validation, json/schema validation, and enconding to prevent cross-site scripting.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
@@ -388,7 +388,7 @@
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "Any input data from the web browser may be sniffed by an attacker. It may be an open disclosure of information leading to privacy and compliance issues; moreover, that incoming can have data containing sensitive information that can be exploited to manipulate the system.",
-                  "mitigation": "Encrypt the incoming data.",
+                  "mitigation": "Encrypt the incoming data with HTTPS, and add field-level encryption for very sensitive input fields.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 13,
@@ -397,8 +397,8 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 1,
+                "tampering": 2,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -948,7 +948,7 @@
                   "severity": "Low",
                   "type": "Tampering",
                   "description": "An SQL injection attacks the database where SQL code is inserted into strings that the server parses and executes with the ill intent. This can jeopardize data integrity such as unwarranted creation, updating, and deletion of row(s) of data.",
-                  "mitigation": "",
+                  "mitigation": "Use of Parameterized Queries / Prepared Statements - these restrict interactions to the database to a certain valid range of actions. ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -969,7 +969,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0
@@ -1093,12 +1093,12 @@
               "threats": [
                 {
                   "id": "899cc54b-cf31-4a7c-ab21-ce9c9f449268",
-                  "title": "Spoofing",
+                  "title": "Browser Client Spoofing",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "The web browser has risk like session hijacking or UI redressing/clickjacking.",
+                  "mitigation": "Use `Content-Security-Policy` headers or mitigate with secure cookies encrypted by the web application and logged/audited by the same process.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
@@ -1106,7 +1106,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
@@ -1362,6 +1362,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 31,
             "ports": {
               "groups": {
                 "top": {
@@ -1445,7 +1446,6 @@
               ]
             },
             "id": "6853c9d0-7125-48c4-a241-b0eb06fb84a5",
-            "zIndex": 31,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -1466,8 +1466,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "LDAP Injection is a possibility.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "LDAP Injection is a possibility as it could alter search filters.",
+                  "mitigation": "Mitigate by parameterized LDAP queries to restrict to valid queries, and perform strict input encoding/sanitization.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 15,
@@ -1493,7 +1493,7 @@
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "An attack can read information not intended for disclosure because of improper data protection set on the LDAP.",
-                  "mitigation": "Review any authorization settings.",
+                  "mitigation": "Apply least-privilege read permissions.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 17,
@@ -1501,11 +1501,18 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 1,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ],
